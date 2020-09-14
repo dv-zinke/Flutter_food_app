@@ -1,16 +1,11 @@
 # flutter_food_app
 
-A new Flutter project.
+Flutter UI 연습 메인, 디테일 페이지
 
-## Getting Started
+## 미리보기 
 
-This project is a starting point for a Flutter application.
+메인 화면
+![main](https://user-images.githubusercontent.com/50859352/93091407-00348700-f6d9-11ea-82cc-81d0ff5747e4.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+상세 화면
+![detail](https://user-images.githubusercontent.com/50859352/93091423-04f93b00-f6d9-11ea-9f44-a652093029c5.png)
