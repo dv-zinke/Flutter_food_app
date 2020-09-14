@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_app/constants.dart';
+import 'package:flutter_food_app/screens/details/components/titlePriceRating.dart';
 
 import 'components/Appbar.dart';
 import 'components/itemImage.dart';
@@ -35,11 +36,36 @@ class ItemInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(20),
+      width: double.infinity,
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(30), topRight: Radius.circular(30))),
+      child: Column(
+        children: <Widget>[
+          shopName(name: "MacDonalds"),
+          TitlePriceRating(
+            name: "Cheese Burger",
+            price: 15,
+            numOfReviews: 24,
+            rating: 4,
+            onRatingChanged: (value) {},
+          )
+        ],
+      ),
+    );
+  }
+
+  Row shopName({String name}) {
+    return Row(
+      children: <Widget>[
+        Icon(
+          Icons.location_on,
+          color: kSecondaryColor,
+        ),
+        SizedBox(width: 10),
+        Text(name)
+      ],
     );
   }
 }
-
